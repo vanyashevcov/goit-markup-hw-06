@@ -154,26 +154,34 @@ img {
 .main {}
 
 .hero {
-    max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
+    max-width: 320px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    padding: 188px 0;
+    padding: 72px 0;
+}
+
+@media screen and (--webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background-mob@2x.jpg);
+    }
 }
 
 .hero-title {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    max-width: 496px;
+    max-width: 216px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .hero-button {
@@ -493,8 +501,7 @@ img {
     fill: #f4f4fd;
 }
 
-.subscribe-box {
-}
+.subscribe-box {}
 
 .subscribe-text {
     font-weight: 500;
@@ -807,6 +814,27 @@ img {
         max-width: 768px;
     }
 
+    .hero {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background-tab.jpg);
+        padding: 112px 0;
+    }
+
+    @media screen and (--webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background-tab@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
     .advantages-list {
         row-gap: 72px;
         column-gap: 24px;
@@ -886,6 +914,24 @@ img {
     .container {
         max-width: 1158px;
         padding: 0 15px;
+    }
+
+    .hero {
+        max-width: 1158px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
+        padding: 188px 0;
+    }
+
+    @media screen and (--webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
     }
 
     .advantages-section {
