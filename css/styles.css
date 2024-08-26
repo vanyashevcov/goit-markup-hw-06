@@ -110,6 +110,8 @@ button {
     left: 0;
     background-color: #fff;
     padding: 72px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -134,7 +136,8 @@ button {
 }
 
 .mob-nav {
-    margin-bottom: 168px;
+    /* margin-bottom: 168px; */
+    margin-bottom: auto;
 }
 
 .mob-menu-list {
@@ -158,13 +161,14 @@ button {
 }
 
 .mob-address {
-    margin-bottom: 48px;
+    margin-top: auto;
 }
 
 .mob-address-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 48px;
 }
 
 .mob-contacts {
@@ -993,7 +997,8 @@ button {
     }
 
     .footer-container {
-        padding-left: 92px;
+        width: 584px;
+        /* padding-left: 92px; */
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -1064,7 +1069,7 @@ button {
     }
 
     .hero {
-        max-width: 1158px;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
         padding: 188px 0;
     }
