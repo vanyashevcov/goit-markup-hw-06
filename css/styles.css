@@ -1153,6 +1153,7 @@ button {
         padding-left: 0;
         flex-wrap: nowrap;
         gap: 0;
+        width: 100%;
     }
 
     .footer-box {
